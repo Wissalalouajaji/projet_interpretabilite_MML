@@ -11,7 +11,7 @@ import pandas as pd
 import pickle
 
 
-loaded_model = pickle.load(open("C:/Users/Xps/Desktop/S4/interpretation/best_model.sav",'rb'))
+loaded_model = pickle.load(open("best_model_rf.sav",'rb'))
 
 
 
@@ -46,14 +46,36 @@ def main():
     # getting the input data from the user
     
     
-    V1 = st.text_input('V1')
-    V3 = st.text_input('V3')
-    V4 = st.text_input('V4')
-    V8 = st.text_input('V8')
-    V17 = st.text_input('V17')
-    V21 = st.text_input('V21')
-    Amount = st.text_input('Amount')
-    
+   Time = st.text_input('Time')
+    V1= st.text_input('V1')
+    V2= st.text_input('V2')
+    V3= st.text_input('V3')
+    V4= st.text_input('V4')
+    V5= st.text_input('V5')
+    V6= st.text_input('V6')
+    V7 = st.text_input('V7')
+    V8= st.text_input('V8')
+    V9= st.text_input('V9')
+    V10= st.text_input('V10')
+    V11= st.text_input('V11')
+    V12= st.text_input('V12')
+    V13= st.text_input('V13')
+    V14 = st.text_input('V14')
+    V15= st.text_input('V15')
+    V16= st.text_input('V16')
+    V17= st.text_input('V17')
+    V18= st.text_input('V18')
+    V19= st.text_input('V19')
+    V20= st.text_input('V20')
+    V21= st.text_input('V21')
+    V22= st.text_input('V22')
+    V23= st.text_input('V23')
+    V24= st.text_input('V24')
+    V25= st.text_input('V25')
+    V26= st.text_input('V26')
+    V27= st.text_input('V27')
+    V28 = st.text_input('V28')
+    Amount= st.text_input('Amount')
     
     # code for Prediction
     Detect = ''
@@ -61,7 +83,7 @@ def main():
     # creating a button for Prediction
     
     if st.button('Diabetes Test Result'):
-        Detect = Fraud_prediction([V3, V1, V8, Amount, V17, V21, V4])
+        Detect = Fraud_prediction([Time,V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,V14,V15,V16,V17,V18,V19,V20,V21,V22,V23,V24,V25,V26,V27,V28,Amount]])
         
         
     st.success(Detect)
