@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 18 19:15:01 2021
 
-@author: BOUSSAIRI
-"""
 
 import streamlit as st
 import numpy as np 
