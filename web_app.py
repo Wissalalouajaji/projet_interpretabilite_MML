@@ -42,7 +42,7 @@ def main():
     # getting the input data from the user
     
     
-   Time = st.text_input('Time')
+    Time = st.text_input('Time')
     V1= st.text_input('V1')
     V2= st.text_input('V2')
     V3= st.text_input('V3')
